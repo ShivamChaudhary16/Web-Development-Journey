@@ -1,0 +1,100 @@
+/* for full html */
+*{
+    font-family:'Courier New';
+}
+
+h1{
+    color:#b92b27;
+}
+/* for a id */
+#login{
+    background-color: rgb(172, 172, 237);
+}
+
+
+/* for  class */
+.upvote{
+    background-color:antiquewhite;
+}
+
+/* descendent selector */
+p a{
+    color:antiquewhite;
+    background-color:#ce76a3
+}
+/* to select en element present very deep */
+nav ul li a{
+    color:hotpink;
+}
+
+/* selects h1 after a p */
+p+ h3{
+    text-decoration:underline;
+}
+
+.upvote + button{
+    background-color:cornflowerblue;
+    color:antiquewhite;
+}
+
+/* child combinator */
+/* only affect direct childrens */
+div>input{
+    background-color:rgb(197, 206, 203);
+    color:beige
+}
+
+input[type=text]{
+    color:red;
+    border-color:darkmagenta;
+}
+
+input[type=password]{
+    color:blue;
+    border-color:darkmagenta;
+}
+h3:hover{
+    text-decoration:dotted;
+    background-color:rgb(202, 121, 121);
+}
+
+button:hover{
+    color:blanchedalmond;
+    background-color: rgb(3, 36, 25);
+}
+button:active{
+    background-color:yellowgreen;
+}
+
+/* div>input:active{
+    color:palevioletred;
+} */
+
+input[type="radio"]:checked +label{
+    font-weight:bold;
+    color:brown;
+
+}
+/* not being used rn . nest everything in div for this */
+div:nth-of-type(2){
+    background-color:beige;
+}
+
+h1::first-letter{
+    color:green;
+}
+p::first-line{
+    color:blue;
+}
+p::selection{
+    background-color:bisque;
+}
+
+h1{
+    background-color:rgb(118, 118, 147) !Important; 
+/* highest priority */
+}
+
+input{
+    background-color:inherit;
+}

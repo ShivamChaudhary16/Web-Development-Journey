@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and table practice</title>
+</head>
+
+<body>
+    <form action="submit">
+        <input name="firstname id=firstname" type="text" placeholder="Enter first name">
+        <input name="lastname id=lastname" type="text" placeholder="Enter last name">
+        <br>
+       <label for="gender">Please select your gender</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+
+        </select>
+        <label for="agree">Do you agree with all terms of services</label>
+        <input type="checkbox" id="agree" required>Yes i agree
+        <button>Register</button>
+    </form>
+
+    <hr>
+
+
+<table border="black">
+<caption>
+Student Information
+</caption>
+<tr>
+<th rowspan="6">Info</th>
+<th rowspan="2">Name</th>
+<th colspan="2">Address</th>
+</tr>
+<tr>
+<th>City</th>
+<th>House</th>
+</tr>
+<tr>
+<td>A</td>
+<td>Delhi</td>
+<td>1</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Mumbai</td>
+<td>2</td>
+</tr>
+<tr>
+    <td>C</td>
+<td>Kolkata</td>
+<td>3</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Pune</td>
+<td>4</td>
+
+</tr>
+</table>
+<hr>
+
+<form action="submit">
+
+<label for="name">Name</label>
+<input id="name" type="text" name="name" >
+<br>
+<label for="gender">Gender:</label>
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female">
+<br>
+<label for="country">Country</label>
+<select name="country" id="country">
+    <option selected disabled>Choose from here</option>
+<option value="India">India</option>
+<option value="Canada">Canada</option>
+<option value="USA">USA</option>
+<option value="Nepal">Nepal</option>
+
+</select>
+<br>
+<label for="message">Message</label>
+<br>
+<textarea rows="5" cols="10" name="feedback" id="message">Feedback</textarea>
+<br>
+<label for="subs">Subscribe</label>
+<input type="checkbox" name="checked">
+<br>
+<label>Rate us out of 5:</label>
+<br>
+<label for="rating1">1</label>
+<input type="radio" id="rating1" name="rating" value="1">
+<br>
+<label for="rating2">2</label>
+<input type="radio" id="rating2" name="rating" value="2">
+<br>
+<label for="rating3">3</label>
+<input type="radio" id="rating3" name="rating" value="3">
+<br>
+<label for="rating4">4</label>
+<input type="radio" id="rating4" name="rating" value="4">
+<br>
+<label for="rating5">5</label>
+<input type="radio" id="rating5" name="rating" value="5">
+<br>
+<button>Submit</button>
+</form>
+
+
+
+  
+</body>
+ 
+
+
+</html>

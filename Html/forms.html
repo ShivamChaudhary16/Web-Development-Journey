@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="/action">
+        <label>username<input placeholder="Name" type="text"></label>
+        <input placeholder="Password" type="password">
+        <input placeholder="Email" type="email">
+        <input placeholder="Color" type="color">
+        <input placeholder="Date" type="date">
+
+        <hr>
+
+        <div>
+            <label for="username">Username : </label>
+            <input id="username" placeholder="Enter your name" type="text" name="user">
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input id="email" placeholder=" Enter email" type="email" name="pass">
+        </div>
+        <div>
+            <label for="age">Age : </label>
+            <input id="age" placeholder=" Enter your email" type="email" name="age">
+        </div>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <hr>
+
+<form action="https://www.google.com/search">
+
+    <input name="q" placeholder="Enter to search" type="text">
+    <button>Submit</button>
+</form>
+
+<hr>
+<form>
+   <label for="apple">Apple</label>
+   <input type="radio" id="apple" name="fruit" value="apple">
+   <label for="mango">Mango</label>
+   <input type="radio" id="mango" name="fruit" value="mango">
+   <label for="banana">Banana</label>
+   <input type="radio" for="banana" name="fruit" value="banana">
+
+   <br>
+   chose ur subjects
+<br>
+   <label for="maths">Maths</label>
+   <input id="maths" type="checkbox" name="subjects" value="maths">
+   <label for="science">Science</label>
+   <input id="science" type="checkbox" name="subjects" value="science">
+   <label for="commerce">Commerce</label>
+   <input id="commerce" type="checkbox" name="subjects" value="commerce">
+<button>Submit</button>
+</form>
+
+<hr>
+<hr>
+<form>
+ Choose your profession:
+ <select name="profession" id="profession">
+    <option value="" selected disabled>Select your option</option>
+  <option value="stu">Student</option>
+  <option value="dev">Developer</option>
+</select>
+<br>
+  Select the volume level
+  <label for="vol">Volume</label>
+  <input type="range" min="0" max="100" step="10" name="vol" value="20">
+
+  <br>
+  <label for="textarea">Please enter your review</label>
+  <textarea id="textarea" name="review" rows="10" cols="50"  ></textarea>
+  <button>Submit</button>
+
+
+
+
+</form>
+</body>
+</html>
