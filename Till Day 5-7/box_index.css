@@ -1,0 +1,38 @@
+div{
+    height:200px;
+    width:500px;
+    background-color:pink;
+    margin:10px;
+    /* border-width:2px;
+    border-style:dashed;
+    border-color:blueviolet; */
+    border:5px solid green; /*shorthand method*/
+    border-left-color:blue;
+    border-right-color:chocolate;
+    border-right-style:dashed;
+    border-radius:15px;
+    border-bottom-right-radius:70px;
+    padding-top:10px;
+    padding-color:green;
+    margin-left:30px;
+}
+
+h1{
+    /* border-color:rgb(0, 145, 145);
+    border-width:5px;
+    border-style:dotted; */
+    border: 5px dotted rgb(0, 145, 145);
+    height:35px
+    
+}
+
+button{
+    border-width:3px;
+    border-color:rgb(165, 25, 48);
+    background-color:rgb(181, 114, 181);
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius:15px;
+}

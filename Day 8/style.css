@@ -1,0 +1,29 @@
+div{
+    color:white;
+    text-align:center;
+    height:100px;
+    width:100px;
+    background-color:blue;
+    transition-duration:1s;
+    transition-delay:0.5s; 
+    transition-timing-function: ease-in;
+    margin:0 auto;
+    margin-top:10px;
+     /* transform:translate(30px,40px); */
+     box-shadow:2px 5px 10px red;
+
+}
+div:hover{
+    color:black;
+    background-color:pink;
+        border-radius: 30%;
+        margin-top:400px;
+        transform:rotate(45deg);
+        transform:scale(2);
+        transform:translate(300px,400px);
+        transform:skew(30deg);
+        
+    transform: translateX(20px) translateY(-10px)  scale(1.2) rotate(15deg) skewX(-10deg);
+
+
+}
