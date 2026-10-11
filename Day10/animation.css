@@ -1,0 +1,28 @@
+.box{
+    height:400px;
+    width:400px;
+    background-color:lightcoral;
+    animation:colorAnimate 5s 1s 3 alternate;
+    /* animation-name:colorAnimate; */
+    /* animation-name:fontAnimation; */
+    /* animation-duration:5s;
+    transition-delay:1s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:3;
+    animation-direction:alternate;
+ */
+}
+
+
+
+@keyframes colorAnimate {
+    from {
+        background-color: rgb(113, 176, 113);
+        font-size: 20px;
+    }
+    to {
+        background-color: rgb(93, 93, 185);
+        font-size: 40px;
+        border-radius:15px;
+    }
+}
