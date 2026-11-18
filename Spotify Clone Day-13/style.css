@@ -1,0 +1,391 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding:0.75rem;
+}
+
+.sidebar {
+    background-color: black;
+    width: 300px;
+    border-radius:1rem; /* 1 rem= 16px*/
+    margin-right:0.75rem;
+}
+
+.main-content {
+        /* background-color: #121212; */
+    flex: 1;
+    min-width: 0;
+    border-radius:1rem;
+    overflow:auto;
+    padding:0 1.5rem 0 1.5rem;
+}
+
+
+.music-player {
+        background-color: #121212;
+
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    
+}
+.nav{
+    background-color:#121212;
+    height:50px;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100px;
+    padding:0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height:2.5rem;
+    opacity:0.75;
+    padding:0.5rem 0,75rem;
+}
+.nav-option:hover{
+    line-height:2.5rem;
+    opacity:1;
+}
+
+.nav-option i{
+    font-size:1.25rem;
+}
+.nav-option a{
+    font-size:1rem;
+    margin-left:1rem;
+}
+
+.library{
+    background-color:#121212;
+    border-radius:1rem;
+    height:100%;
+    margin-top:0.5rem;
+    padding:0.5rem 0.75rem;
+    
+}
+.options{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.lib-option img{
+    height:1.25rem;
+    width:1.25rem;
+}
+
+.icons{
+    font-size:1.25rem;
+    display:flex;
+}
+.icons i{
+    opacity:0.75;
+    margin-right:1rem;
+}
+.icons i:hover{
+    opacity:1;
+}
+
+.box{
+    min-height:8rem;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    background-color:#232323;
+    border-radius:0.75rem;
+    margin:0.75rem  0 1.75rem 0;
+    padding:0.75rem 1rem;
+}
+
+.box-p1{
+    font-size:1rem;
+    font-weight:600;
+
+}
+.box-p2{
+    font-size:0.85rem;
+    opacity:0.9;
+}
+
+.badge{
+    background-color:#fff;
+    border:none;
+    border-radius:100px;
+    padding:0.25rem 1rem; 
+    font-weight:700;
+    height:2rem;
+    width:fit-content; 
+}
+
+.dark-badge{
+    background-color:#000;
+    color:#fff;
+}
+
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color:#000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0 1rem 0;
+    z-index:10;
+}
+
+.sticky-nav-icons{
+ /* height:2rem;
+ width:2rem; */
+ margin-left:0.75rem
+
+}
+
+.sticky-nav-options{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-item{
+  margin-right:1rem;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+
+.card{
+    background-color:#232323;
+    width:150px;
+    border-radius:0.5rem;
+    padding:1rem;
+    margin-left:1.5rem;
+
+}
+.cards-container{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+
+}
+
+.card-image{
+    width:100%;
+    border-radius:0.5rem;
+}
+
+.card-title{
+    font-weight:600;
+}
+
+.card-info{
+    font-size:0.85rem;
+    opacity:0.8;
+}
+
+.footer{
+    height:300px;
+    display:flex;
+    align-items:center; 
+    justify-content:center;
+}
+
+.line{
+    width:90%;
+    height:0;
+    border-top:1px solid white;
+    opacity:0.4;
+}
+
+.music-player{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.album{
+    width:25%;
+}
+.player{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.control{
+    width:25%;
+}
+
+.player-control-icon{
+    height:1rem;
+    opacity:0.7;
+}
+.player-control-icon:hover{
+
+    opacity:1;
+}
+
+.player-control{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1.5rem;
+    margin:0.5rem 0;
+}
+
+.playback-bar{
+    width:80%;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.progress-bar{
+    flex:1;
+    min-width:0;
+    appearance:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+ background-color:white;
+ border-radius:10px;
+ height:0.2rem;   
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance:none;
+    height:1rem;
+    width:1rem;
+    background-color:#1bd760;
+    border-radius:50%;
+    margin-top:-6px;
+}
+
+/* Album section: align the artwork, track details, and like icon */
+.album{
+    display:flex;
+    align-items:center;
+    gap:0.75rem;
+    padding:0 0.75rem;
+    box-sizing:border-box;
+    min-width:0;
+}
+
+.album-cover{
+    width:3.5rem;
+    height:3.5rem;
+    border-radius:0.25rem;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.album-details{
+    min-width:0;
+}
+
+.album-title,
+.album-artist{
+    margin:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.album-title{
+    font-size:0.85rem;
+    font-weight:600;
+}
+
+.album-artist{
+    margin-top:0.3rem;
+    color:#b3b3b3;
+    font-size:0.7rem;
+}
+
+.album-like{
+    width:1.2rem;
+    height:1.2rem;
+    margin-left:0.5rem;
+    
+}
+
+/* Player section: keep the provided playback controls centered */
+.player{
+    min-width:0;
+    justify-content:center;
+}
+
+.player-control-icon{
+    width:auto;
+    object-fit:contain;
+    cursor:pointer;
+}
+
+.player-control-icon:hover{
+    opacity:1;
+}
+
+.playback-bar{
+    font-size:0.7rem;
+    color:#b3b3b3;
+}
+
+/* Control section: place queue, device, and volume controls on the right */
+.control{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:0.75rem;
+    padding:0 1rem 0 0.5rem;
+    box-sizing:border-box;
+    color:#b3b3b3;
+    min-width:0;
+}
+
+.control-icon{
+    height:1rem;
+    filter:brightness(0) invert(1);
+}
+
+.volume-bar{
+    width:5rem;
+    min-width:2rem;
+    accent-color:#fff;
+    cursor:pointer;
+}
+
+@media(max-width:700px){
+    /* Compact player layout: hide secondary controls on narrow screens */
+    .control-icon,
+    .volume-bar,
+    .album-like{
+        display:none;
+    }
+
+    .album,
+    .control{
+        width:25%;
+    }
+}
